@@ -34,5 +34,11 @@ for (let i = 0; i < images.length; i++) {
 }
 
 delAll.addEventListener('click', function(){
+    liItems.forEach((li) => {
+        li.remove()
+    })
+    ulItems.forEach((li) => {
+        li.remove()
+    })
     imgRow.remove()
 })
